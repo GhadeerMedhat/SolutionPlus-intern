@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin top as needed */
+}
+
+#slider-container {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+img.active {
+    display: block;
+}
+
+/* Styles for buttons */
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Style the buttons when hovered */
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Style the buttons when clicked */
+button:active {
+    background-color: rgb(2, 76, 2); /* Even darker green */
+}
+
+/* Style for autoplay-active button */
+button.autoplay-active {
+    background-color: red;
+}
